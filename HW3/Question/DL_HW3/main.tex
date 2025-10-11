@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\input{etc/cmd}
+
+\begin{document}
+\fontsize{12pt}{14pt}\selectfont
+
+\input{etc/head}
+
+\centering {\fontsize{18}{22}\selectfont \textbf{مهلت تحویل : 1404/02/05 }}\\
+{\fontsize{14}{22}\selectfont \textbf{لطفا به نکات موجود در سند قوانین انجام و تحویل تمرین ها دقت فرمایید. }}
+
+\begin{enumerate}
+
+    \section*{سوالات تئوری}
+    \item \includegraphics[width=1cm]{figs/Allowed_with_contributino.jpg}
+     از مدل‌های \lr{Sequence-to-Sequence} برای حل مسائل مشترک بینایی ماشین و پردازش زبان مانند مسئله \lr{Video Captioning} و از نوع \lr{Many-to-Many} آنها استفاده می‌شود. در مقاله \lr{CAM-RNN}زیر برای حل این مسئله از معماری‌های \lr{CNN} و \lr{RNN} استفاده شده‌است. نحوه حل مسئله را در این مقاله توضیح دهید. آیا ایده‌ی این مقاله را برای مسئله \lr{Image Captioning} می‌توان استفاده کرد؟ توضیح دهید(10 نمره).\\
+
+    \item \includegraphics[width=1cm]{figs/Forbidden_AI.jpg}
+    با فرض اینکه ابعاد داده ورودی 128 و ابعاد بردار نهان 64 باشد، تعداد پارامترهای یک لایه \lr{Simple RNN} و \lr{GRU} و \lr{LSTM} و \lr{BiLSTM} را با ذکر کامل جزئیات محاسبات به دست آورده و با هم مقایسه کنید(12 نمره).
+    
+    \item \includegraphics[width=1cm]{figs/Forbidden_AI.jpg}
+    برای حل هر یک از مسائل زیر، یک معماری مناسب از بین انواع معماری‌های \lr{RNN} که تاکنون آموخته‌اید، انتخاب کنید. معماری‌های مورد نظر شامل \lr{One-to-Many}، \lr{Many-to-One} و \lr{Many-to-Many} هستند. پس از انتخاب، دلیل خود را برای استفاده از آن معماری به‌طور واضح توضیح دهید(18 نمره).
+    \begin{itemize}
+        \item \lr{Text Summarization}
+        \item \lr{Machine Translation}
+        \item \lr{Video Captioning}
+        \item \lr{Sentiment Analysis}
+        \item \lr{Automatic Speech Recognition}
+        \item \lr{Question Answering}
+        \item \lr{Text-to-Speech}
+        \item \lr{Paraphrase Generation}
+        \item \lr{Code Translation}
+
+    \end{itemize}
+    \section*{سوال امتیازی}
+    \item \includegraphics[width=1cm]{figs/Forbidden_AI.jpg}
+    با توجه به شبکه نشان‌داده‌شده در شکل زیر، به سوالات مطرح‌شده پاسخ دهید. برای سادگی، فرض کنید تمام مقادیر شامل ورودی‌ها، وزن‌ها و خروجی‌ها اسکالر هستند. همچنین تمام توابع فعال‌ساز را از نوع سیگموید \lr{σ} در نظر بگیرید(20 نمره).
+    \begin{figure}[h]  
+        \centering
+        \includegraphics[width=0.85\textwidth]{figs/Q4.png}
+        \label{fig:num_pic}  
+    \end{figure}
+
+    \begin{itemize}
+        \item ابتدا گرادیان \lr{$h_{t}$} را بر حسب گرادیان \lr{$h_{(t+1)}$} بنویسید.
+        \item 	حال با استفاده از رابطه قسمت قبل، و با قاعده مشتق زنجیری، گرادیان \lr{$h_{0}$} را بر حسب گرادیان \lr{$h_{T}$} بنویسید.
+        \item برش گرادیان توسط مقدار و توسط اندازه را توضیح دهید. برتری برش توسط اندازه را به برش توسط مقدار توضیح دهید.
+    \end{itemize}
+    	
+    \section*{سوالات عملی} 
+    \item \includegraphics[width=1cm]{figs/Allowed_with_contributino.jpg}
+    به نوت‌بوک \lr{divan\_hafez.ipynb} مراجعه کرده و قسمت های مشخص شده را کامل کنید. در این نوت‌بوک قرار است با استفاده از یک \lr{RNN}  متن های مشابه با غزل‌های دیوان حافظ تولید کنید(30 نمره). \\
+    \textbf{در نظر داشته باشید تنها اجازه ویرایش قسمت های مشخص شده را دارید.}
+
+    \item \includegraphics[width=1cm]{figs/Allowed_with_contributino.jpg}
+    در سالهای اخیر توجه به رمزارزها بسیار گسترش یافته است. یکی از معروفترین رمزارزهای موجود در بازار \lr{Bitcoin} است. در این سوال قصد داریم قیمت \lr{Bitcoin} را در آینده پیش‌بینی کنیم. برای این کار مراحل زیر را دنبال نمایید(30 نمره).\\
+    \begin{itemize}
+        \item   ابتدا لازم است کتابخانه \lr{yfinance} را نصب نمایید. این کتابخانه را میتوانید به کمک این \href{https://pypi.org/project/yfinance/}{لینک} نصب نمایید.
+        \item   حال میتوانید قیمت \lr{Bitcoin} را دانلود نمایید. برای این کار از تابع \lr{download} موجود در این \href{https://github.com/ranaroussi/yfinance}{لینک} استفاده کنید. لازم به ذکر است نماد شاخص مورد نظر برابر با \lr{BTC-USD} است و تاریخ ذخیره‌سازی برای داده‌های آموزشی را برابر با \lr{0.8} ابتدایی داده ها از لحاظ زمانی قرار دهید.
+        \item برای آزمایش درستی مراحل فوق، نمودار این شاخص را بر حسب زمان رسم نمایید و به هر یک از داده‌های آموزشی و آزمایشی رنگ متفاوتی اختصاص دهید. نمودار حاصل مشابه با نمودار زیر خواهد بود.
+        \begin{figure}[h]  
+            \centering
+            \includegraphics[width=\textwidth]{figs/Q6_1.png}
+            \label{fig:num_pic}  
+        \end{figure}
+        \item   مقادیر محور \lr{y} نمودار فوق را با استفاده از تابع \lr{MinMaxScaler} کتابخانه \lr{scikit-learn} نرمالیزه کنید. توجه داشته باشید تنها از داده‌های آموزشی برای تنظیم مقیاس استفاده کنید و داده‎‌های آزمون را براساس معیار داده‌های آموزش مقیاس‌شان تنظیم می‌شود.
+        \item   در مرحله بعد داده‌های مورد نیاز برای آموزش و آزمایش مدل را تهیه می‌نماییم. برای این کار متغیری تعریف کنید که نشان دهنده تعداد داده‌های گذشته برای پیش‌بینی داده مشخصی باشد. به عنوان مثال اگر این متغیر را برابر با 60 قرار دهید، یعنی از 60 داده گذشته در پیش‌بینی آن داده استفاده شده‌است.
+        \item   مدل را مشابه با معماری شکل زیر بسازید.
+        \begin{figure}[h]  
+            \centering
+            \includegraphics[width=\textwidth]{figs/Q6_2.png}
+            \label{fig:num_pic}  
+        \end{figure}
+        \item   حال این مدل را با بهینه‌ساز \lr{AdamW} و تابع ضرر \lr{MSE} و \lr{BatchSize=32} به تعداد 100 ایپاک آموزش دهید.
+        \item   پس از آموزش مدل، پیش‌بینی را بر روی داده‌های آزمون انجام دهید و نمودار را رسم نمایید. در این نمودار که بر حسب زمان رسم می‌شود، هر دو مقدار واقعی و پیش‌بینی را با رنگ‌های متفاوت رسم کنید.
+        \item   در نهایت، به صورت متوالی آینده را از زمانی که داده‌ها به پایان می‌رسند پیش‌بینی کنید.
+        \item   افزایش یا کاهش متغیر تعریف شده در مرحله تهیه داده مورد نیاز برای آموزش مدل یعنی تعداد داده‌های گذشته برای پیش‌بینی داده‌های مشخص چه مزایا یا معایبی دارد؟ شرح دهید.
+        
+    \end{itemize}
+
+\end{enumerate}
+
+
+
+\end{document}
+
+
