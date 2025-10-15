@@ -1,7 +1,7 @@
 # DeepLearningCourseIUST4032
 ## Deep Learning Course Assignments - Iran University of Science and Technology
 
-[cite_start]This repository contains an archive of assignments and their solutions for the Deep Learning course, taught by Dr. Mohammad Reza Mohammadi at the Iran University of Science and Technology (IUST). The purpose of this collection is to provide a helpful resource for students taking this course.
+This repository contains an archive of assignments and their solutions for the Deep Learning course, taught by Dr. Mohammad Reza Mohammadi at the Iran University of Science and Technology (IUST). The purpose of this collection is to provide a helpful resource for students taking this course.
 
 ## Teaching Assistants
 
