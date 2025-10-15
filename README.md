@@ -41,7 +41,3 @@ Each assignment is located in a separate folder named `HW#`. Inside each folder,
 ## Contributing
 
 If you wish to improve or correct any of the files, please feel free to submit a Pull Request.
-
-## License
-
-This collection is released under the [MIT License](LICENSE). Use for educational purposes is freely permitted.
